@@ -1,0 +1,9 @@
+Trade date,Settle date,Reference,Description,Unit cost (p),Quantity,Value (£)
+01/04/2026,01/04/2026,PAY1001,Payment received - Faster Payments,,,"3,000.00"
+07/04/2026,09/04/2026,B2001,Vanguard FTSE All-World UCITS ETF Accumulating,13750.00,20,"-2,750.00"
+07/04/2026,09/04/2026,B2002,Scottish Mortgage Investment Trust Ordinary Shares,1405.50,150,"-2,108.25"
+15/05/2026,19/05/2026,S2003,Scottish Mortgage Investment Trust Ordinary Shares,1450.00,50,725.00
+20/05/2026,20/05/2026,FEE55,Dealing fee,,,-11.95
+30/06/2026,30/06/2026,INT01,Interest received,,,3.12
+14/09/2026,14/09/2026,WD77,Withdrawal - Faster Payments,,,"-1,500.00"
+01/10/2026,01/10/2026,TR01,Transfer in - ISA transfer from previous provider,,,"12,000.00"

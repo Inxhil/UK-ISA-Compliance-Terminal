@@ -1,0 +1,16 @@
+{
+ "country": "US",
+ "currency": "USD",
+ "estimateCurrency": "USD",
+ "exchange": "NASDAQ NMS - GLOBAL MARKET",
+ "finnhubIndustry": "Technology",
+ "floatingShare": 7419.07,
+ "ipo": "1986-03-13",
+ "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/MSFT.png",
+ "marketCapitalization": 3759436.5481039993,
+ "name": "Microsoft Corporation",
+ "phone": "14258828080",
+ "shareOutstanding": 7426.19,
+ "ticker": "MSFT",
+ "weburl": "https://www.microsoft.com/en-in/"
+}

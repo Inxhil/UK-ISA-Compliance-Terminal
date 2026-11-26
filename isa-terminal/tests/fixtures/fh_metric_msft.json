@@ -1,0 +1,15 @@
+{
+ "metric": {
+  "52WeekHigh": 559.15,
+  "52WeekLow": 349.2,
+  "beta": 1.0631189,
+  "currentDividendYieldTTM": 0.7191,
+  "forwardPE": 24.5902,
+  "marketCapitalization": 3759436.5,
+  "payoutRatioTTM": 18.95,
+  "peTTM": 26.3578,
+  "pegTTM": 1.53029
+ },
+ "metricType": "all",
+ "symbol": "MSFT"
+}

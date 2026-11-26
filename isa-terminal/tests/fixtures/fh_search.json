@@ -1,0 +1,47 @@
+{
+ "count": 7,
+ "result": [
+  {
+   "description": "BARCLAYS PLC",
+   "displaySymbol": "BARC.L",
+   "symbol": "BARC.L",
+   "type": "Common Stock"
+  },
+  {
+   "description": "Barclays PLC",
+   "displaySymbol": "BARC.L",
+   "symbol": "BARC.L",
+   "type": "Common Stock"
+  },
+  {
+   "description": "Barco NV",
+   "displaySymbol": "BAR.BR",
+   "symbol": "BAR.BR",
+   "type": "Common Stock"
+  },
+  {
+   "description": "Barcino Property SOCIMI SA",
+   "displaySymbol": "YBAR.MC",
+   "symbol": "YBAR.MC",
+   "type": "Common Stock"
+  },
+  {
+   "description": "Igis Neptune Barcelona Holdco SOCIMI SA",
+   "displaySymbol": "MLABC.PA",
+   "symbol": "MLABC.PA",
+   "type": "Common Stock"
+  },
+  {
+   "description": "Barcos Co Ltd",
+   "displaySymbol": "7790.T",
+   "symbol": "7790.T",
+   "type": "Common Stock"
+  },
+  {
+   "description": "Barclays Bank PLC",
+   "displaySymbol": "06GH.L",
+   "symbol": "06GH.L",
+   "type": "Common Stock"
+  }
+ ]
+}

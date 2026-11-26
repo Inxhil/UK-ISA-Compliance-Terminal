@@ -1,0 +1,29 @@
+{
+ "average_volume": "5607358",
+ "change": "-12.14001",
+ "close": "574.62000",
+ "currency": "USD",
+ "datetime": "2026-11-18",
+ "exchange": "NYSE",
+ "fifty_two_week": {
+  "high": "596.91998",
+  "high_change": "-22.29999",
+  "high_change_percent": "-3.73584",
+  "low": "464.010010",
+  "low_change": "110.60999",
+  "low_change_percent": "23.83784",
+  "range": "464.010010 - 596.919983"
+ },
+ "high": "583.71997",
+ "is_market_open": false,
+ "last_quote_at": 1795035540,
+ "low": "573.090027",
+ "mic_code": "XNYS",
+ "name": "Berkshire Hathaway Inc. Class B",
+ "open": "583.030029",
+ "percent_change": "-2.068991",
+ "previous_close": "586.76001",
+ "symbol": "BRK.B",
+ "timestamp": 1795012200,
+ "volume": "5406581"
+}

@@ -1,0 +1,15 @@
+# Core (all free, no API keys required)
+yfinance>=0.2.54
+pandas>=2.0
+numpy>=1.26
+PyYAML>=6.0
+requests>=2.31
+tzdata>=2024.1        # IANA tz database (needed on Windows for Europe/London)
+
+# Terminal UI
+textual>=0.80
+textual-plotext>=1.0  # candlestick / SMA charts inside Textual
+plotext>=5.3
+
+# Tests
+pytest>=8.0

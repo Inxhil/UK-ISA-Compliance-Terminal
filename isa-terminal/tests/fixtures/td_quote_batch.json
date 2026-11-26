@@ -1,0 +1,60 @@
+{
+ "AAPL": {
+  "average_volume": "42634145",
+  "change": "0.54000854",
+  "close": "352.45001",
+  "currency": "USD",
+  "datetime": "2026-11-18",
+  "exchange": "NASDAQ",
+  "fifty_two_week": {
+   "high": "360.82999",
+   "high_change": "-8.37997",
+   "high_change_percent": "-2.32242",
+   "low": "243.42000",
+   "low_change": "109.030014",
+   "low_change_percent": "44.79090",
+   "range": "243.419998 - 360.829987"
+  },
+  "high": "356.42001",
+  "is_market_open": false,
+  "last_quote_at": 1795035540,
+  "low": "351.47061",
+  "mic_code": "XNGS",
+  "name": "Apple Inc.",
+  "open": "351.87000",
+  "percent_change": "0.15345075",
+  "previous_close": "351.91000",
+  "symbol": "AAPL",
+  "timestamp": 1795012200,
+  "volume": "33393854"
+ },
+ "NVDA": {
+  "average_volume": "391486586",
+  "change": "-4.5",
+  "close": "150.96001",
+  "currency": "USD",
+  "datetime": "2026-11-18",
+  "exchange": "NASDAQ",
+  "fifty_two_week": {
+   "high": "243.37000",
+   "high_change": "-92.40999",
+   "high_change_percent": "-37.97099",
+   "low": "148.80000",
+   "low_change": "2.16000",
+   "low_change_percent": "1.45162",
+   "range": "148.800003 - 243.369995"
+  },
+  "high": "159.70000",
+  "is_market_open": false,
+  "last_quote_at": 1795035540,
+  "low": "150.39999",
+  "mic_code": "XNGS",
+  "name": "NVIDIA Corporation",
+  "open": "159.19000",
+  "percent_change": "-2.89464",
+  "previous_close": "155.46001",
+  "symbol": "NVDA",
+  "timestamp": 1795012200,
+  "volume": "343007056"
+ }
+}

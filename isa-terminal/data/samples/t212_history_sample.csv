@@ -1,0 +1,12 @@
+Action,Time,ISIN,Ticker,Name,Notes,ID,No. of shares,Price / share,Currency (Price / share),Exchange rate,Result,Currency (Result),Total,Currency (Total),Withholding tax,Currency (Withholding tax)
+Deposit,2026-05-01 08:01:12,,,,Bank transfer,D-001,,,,,,,1000.00,GBP,,
+Market buy,2026-05-01 14:32:10,IE00BK5BQT80,VWRP,Vanguard FTSE All-World UCITS ETF (USD) Accumulating,,O-001,6,137.20,GBP,1.00,,,823.50,GBP,,
+Market buy,2026-05-04 15:05:41,US5949181045,MSFT,Microsoft,,O-002,0.35,495.10,USD,1.3180,,,132.60,GBP,,
+Limit buy,2026-05-06 09:12:03,GB0009895292,AZN,AstraZeneca,,O-003,1,13400.00,GBX,100,,,134.67,GBP,,
+Dividend (Ordinary),2026-06-05 10:00:00,US5949181045,MSFT,Microsoft,,Div-001,0.35,0.91,USD,1.3150,,,0.24,GBP,0.04,USD
+Currency conversion,2026-06-10 11:00:00,,,,,FX-001,,,,,,,,GBP,,
+Market sell,2026-07-02 14:00:00,IE00BK5BQT80,VWRP,Vanguard FTSE All-World UCITS ETF (USD) Accumulating,,O-004,2,140.00,GBP,1.00,12.40,GBP,279.80,GBP,,
+Withdrawal,2026-07-20 09:00:00,,,,,W-001,,,,,,,-800.00,GBP,,
+Interest on cash,2026-07-31 00:00:00,,,,,I-001,,,,,,,0.43,GBP,,
+Market buy,2026-08-03 14:30:00,GB00B0000000,UNKN,Unknown Holdings plc,,O-005,5,100.00,GBP,1.00,,,500.00,GBP,,
+Market buy,2026-08-04 14:30:00,US67066G1040,NVDA,NVIDIA,,O-006,1,150.00,USD,1.3150,,,114.10,EUR,,

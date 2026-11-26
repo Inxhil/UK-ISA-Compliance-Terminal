@@ -1,0 +1,68 @@
+[
+ {
+  "category": "company",
+  "datetime": 1795038151,
+  "headline": "Why Anthropic says cybersecurity is one of its 'most important' opportunities",
+  "id": 143921125,
+  "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+  "related": "MSFT",
+  "source": "Yahoo",
+  "summary": "Deirdre Bosa outlines some thoughts on cybersecurity risks just ahead of Anthropic's (ANTH.PVT) long-awaited IPO.",
+  "url": "https://finnhub.io/api/news?id=efae2816fa04de2869c7da6d26e41a249554a1593d0873967fdbbc3a263d2a29"
+ },
+ {
+  "category": "company",
+  "datetime": 1795038106,
+  "headline": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off?",
+  "id": 143921145,
+  "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+  "related": "MSFT",
+  "source": "Yahoo",
+  "summary": "Yahoo Finance's Deirdre Bosa and In the Loop host Ejaaz Ahamadeen\u00a0discuss Apollo (APO) is lining up $40 billion in financing so SpaceX (SPCX) can rent GPUs as a neo cloud, funding CEO Elon Musk's wider ambitions. Disclosure: Yahoo is a portfolio company of funds managed by affiliates of Apollo Global Management.",
+  "url": "https://finnhub.io/api/news?id=e5bbc005df9d945b8cb0b4511d2c9395ae3fd94c79708395d6badb134f945313"
+ },
+ {
+  "category": "company",
+  "datetime": 1795037772,
+  "headline": "AI agent swarms could turn major outages into identity risks: Anthropic investor",
+  "id": 143921146,
+  "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+  "related": "MSFT",
+  "source": "Yahoo",
+  "summary": "Deirdre Bosa sits down with IVP General Partner Somesh Dash to discuss how evolving AI agents could turn outages into heightened identity risks. IVP is an investor in Anthropic (ANTH.PVT), which is set to go public via a mega-IPO this Thursday.",
+  "url": "https://finnhub.io/api/news?id=949546e4e9eee68dd441567df847854add3e6e8db561475a7fe9caa62f957404"
+ },
+ {
+  "category": "company",
+  "datetime": 1795036982,
+  "headline": "Amazon and Google Have a Stake",
+  "id": 143921147,
+  "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+  "related": "MSFT",
+  "source": "Yahoo",
+  "summary": "Amazon.com and Google could soon own more than 35% of Anthropic stock.",
+  "url": "https://finnhub.io/api/news?id=8b2145bf38a6664ab367dc2a40b3ffedb16c8864f3c997df8c898995e5e4dd7b"
+ },
+ {
+  "category": "company",
+  "datetime": 1795036787,
+  "headline": "Nvidia highlights open models amid leadership shakeup",
+  "id": 143921149,
+  "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+  "related": "MSFT",
+  "source": "Yahoo",
+  "summary": "In its first earnings call since Jensen Huang\u2019s resignation, Nvidia shed light on the growth of open models and the ecosystem it\u2019s helping to build around them.",
+  "url": "https://finnhub.io/api/news?id=91774330e2770f0fc4665b48e92ed16cd7d6ad6df09bb033686d6ef08c227b65"
+ },
+ {
+  "category": "company",
+  "datetime": 1795036440,
+  "headline": "Want to Play Defense With Your Stock Portfolio? Here Are Pros\u2019 Picks.",
+  "id": 143921126,
+  "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+  "related": "MSFT",
+  "source": "Yahoo",
+  "summary": "Recent market volatility has highlighted the value of defensive names in stock portfolios. We asked investment professionals to name their favorites.",
+  "url": "https://finnhub.io/api/news?id=d62ed4d61040e5366e320739df8a06c547cc90b277b525b9c7549acbcb004733"
+ }
+]

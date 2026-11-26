@@ -1,0 +1,64 @@
+date,account,type,amount_gbp,note
+2024-04-08,HL_ISA,deposit,5000.00,New tax year lump sum (2024/25)
+2024-04-08,HL_LISA,deposit,1000.00,LISA quarterly
+2024-05-01,T212_ISA,deposit,500.00,Monthly DCA
+2024-06-03,T212_ISA,deposit,500.00,Monthly DCA
+2024-07-01,T212_ISA,deposit,500.00,Monthly DCA
+2024-07-08,HL_LISA,deposit,1000.00,LISA quarterly
+2024-08-01,T212_ISA,deposit,500.00,Monthly DCA
+2024-09-02,T212_ISA,deposit,500.00,Monthly DCA
+2024-09-20,VG_ISA,deposit,3000.00,Bonus invested
+2024-10-01,T212_ISA,deposit,500.00,Monthly DCA
+2024-10-08,HL_LISA,deposit,1000.00,LISA quarterly
+2024-11-01,T212_ISA,deposit,500.00,Monthly DCA
+2024-12-02,T212_ISA,deposit,500.00,Monthly DCA
+2025-01-02,T212_ISA,deposit,500.00,Monthly DCA
+2025-01-08,HL_LISA,deposit,1000.00,LISA quarterly
+2025-02-03,T212_ISA,deposit,500.00,Monthly DCA
+2025-03-03,T212_ISA,deposit,500.00,Monthly DCA
+2025-04-07,HL_ISA,deposit,5000.00,New tax year lump sum (2025/26)
+2025-04-07,HL_LISA,deposit,1000.00,LISA quarterly
+2025-05-01,T212_ISA,deposit,750.00,Monthly DCA
+2025-06-02,T212_ISA,deposit,750.00,Monthly DCA
+2025-07-01,T212_ISA,deposit,750.00,Monthly DCA
+2025-07-07,HL_LISA,deposit,1000.00,LISA quarterly
+2025-08-01,T212_ISA,deposit,750.00,Monthly DCA
+2025-09-01,T212_ISA,deposit,750.00,Monthly DCA
+2025-10-01,T212_ISA,deposit,750.00,Monthly DCA
+2025-10-07,HL_LISA,deposit,1000.00,LISA quarterly
+2025-10-20,VG_ISA,deposit,2000.00,Annual bonus invested
+2025-11-03,T212_ISA,deposit,750.00,Monthly DCA
+2025-12-01,T212_ISA,deposit,750.00,Monthly DCA
+2026-01-02,T212_ISA,deposit,750.00,Monthly DCA
+2026-01-07,HL_LISA,deposit,1000.00,LISA quarterly
+2026-02-02,T212_ISA,deposit,750.00,Monthly DCA
+2026-02-10,VG_ISA,transfer_in,12000.00,Transfer from old provider (prior-year subscriptions; NOT a subscription)
+2026-03-02,T212_ISA,deposit,750.00,Monthly DCA
+2026-03-20,HL_ISA,withdrawal,2000.00,Flexible withdrawal in 2025/26 - cannot be replaced after 5 Apr 2026
+2026-04-01,T212_ISA,deposit,750.00,Monthly DCA (last of 2025/26)
+2026-04-07,HL_ISA,deposit,3000.00,New tax year lump sum (2026/27)
+2026-04-07,HL_LISA,deposit,250.00,LISA monthly
+2026-05-01,T212_ISA,deposit,1000.00,Monthly DCA
+2026-05-07,HL_LISA,deposit,250.00,LISA monthly
+2026-06-01,T212_ISA,deposit,1000.00,Monthly DCA
+2026-06-08,HL_LISA,deposit,250.00,LISA monthly
+2026-06-15,VG_ISA,deposit,2000.00,Annual bonus invested
+2026-07-01,T212_ISA,deposit,1000.00,Monthly DCA
+2026-07-07,HL_LISA,deposit,250.00,LISA monthly
+2026-07-20,T212_ISA,withdrawal,800.00,Flexible withdrawal (to be replaced same tax year)
+2026-08-03,T212_ISA,deposit,1000.00,Monthly DCA
+2026-08-07,HL_LISA,deposit,250.00,LISA monthly
+2026-08-10,T212_ISA,deposit,800.00,Replacement of July flexible withdrawal (same tax year)
+2026-09-01,T212_ISA,deposit,1000.00,Monthly DCA
+2026-09-07,HL_LISA,deposit,250.00,LISA monthly
+2026-09-14,HL_ISA,withdrawal,1500.00,Flexible withdrawal - not yet replaced
+2026-10-01,T212_ISA,deposit,1000.00,Monthly DCA
+2026-10-07,HL_LISA,deposit,250.00,LISA monthly
+2026-11-02,T212_ISA,deposit,1000.00,Monthly DCA
+2026-11-09,HL_LISA,deposit,250.00,LISA monthly
+2026-05-21,HL_LISA,bonus,62.50,Gov 25% bonus (NOT a subscription)
+2026-06-18,HL_LISA,bonus,62.50,Gov 25% bonus (NOT a subscription)
+2026-07-21,HL_LISA,bonus,62.50,Gov 25% bonus (NOT a subscription)
+2026-08-19,HL_LISA,bonus,62.50,Gov 25% bonus (NOT a subscription)
+2026-09-17,HL_LISA,bonus,62.50,Gov 25% bonus (NOT a subscription)
+2026-10-20,HL_LISA,bonus,62.50,Gov 25% bonus (NOT a subscription)

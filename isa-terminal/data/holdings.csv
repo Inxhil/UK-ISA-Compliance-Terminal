@@ -1,0 +1,13 @@
+account,ticker,quantity,avg_cost_gbp,as_of,note
+T212_ISA,VWRP.L,60,107.20,2026-11-16,
+HL_ISA,VWRP.L,58,111.40,2026-11-16,
+HL_LISA,VWRP.L,40,116.50,2026-11-16,LISA core holding
+VG_ISA,VUAG.L,104,88.20,2026-11-16,
+HL_ISA,SMT.L,615,10.62,2026-11-16,
+HL_ISA,AZN.L,36,114.50,2026-11-16,
+T212_ISA,MSFT,14,318.40,2026-11-16,avg cost in GBP at purchase-date FX
+T212_ISA,NVDA,92,47.30,2026-11-16,post-split cost basis
+T212_ISA,CASH,1240.00,1,2026-11-16,uninvested cash
+HL_ISA,CASH,660.00,1,2026-11-16,uninvested cash
+HL_GIA,MSFT,12,268.00,2026-11-16,Bed & ISA candidate
+HL_GIA,SMT.L,520,9.35,2026-11-16,Bed & ISA candidate

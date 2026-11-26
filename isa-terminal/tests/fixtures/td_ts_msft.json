@@ -1,0 +1,46 @@
+{
+ "meta": {
+  "currency": "USD",
+  "exchange": "NASDAQ",
+  "exchange_timezone": "America/New_York",
+  "interval": "1day",
+  "mic_code": "XNGS",
+  "symbol": "MSFT",
+  "type": "Common Stock"
+ },
+ "status": "ok",
+ "values": [
+  {
+   "close": "508.29001",
+   "datetime": "2026-11-18",
+   "high": "510.44000",
+   "low": "501.079987",
+   "open": "505.10999",
+   "volume": "21349348"
+  },
+  {
+   "close": "506.23999",
+   "datetime": "2026-11-17",
+   "high": "515.64001",
+   "low": "496.51001",
+   "open": "514.57001",
+   "volume": "27992800"
+  },
+  {
+   "close": "517.98999",
+   "datetime": "2026-11-16",
+   "high": "527.95001",
+   "low": "516.82001",
+   "open": "525.090027",
+   "volume": "30218600"
+  },
+  {
+   "close": "523.88000",
+   "datetime": "2026-11-13",
+   "high": "526.41998",
+   "low": "513.82001",
+   "open": "519.75",
+   "volume": "26189200"
+  }
+ ]
+}

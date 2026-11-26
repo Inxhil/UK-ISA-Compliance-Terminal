@@ -1,0 +1,25 @@
+{
+ "change": "0.00077000000",
+ "close": "1.31485",
+ "datetime": "2026-11-19",
+ "exchange": "Forex",
+ "fifty_two_week": {
+  "high": "1.38621",
+  "high_change": "-0.071360000",
+  "high_change_percent": "-5.14785",
+  "low": "1.30395",
+  "low_change": "0.010898975",
+  "low_change_percent": "0.83584236",
+  "range": "1.303951 - 1.386210"
+ },
+ "high": "1.31533",
+ "is_market_open": true,
+ "last_quote_at": 1795044420,
+ "low": "1.31403",
+ "name": "British Pound / US Dollar",
+ "open": "1.31405",
+ "percent_change": "0.058596128",
+ "previous_close": "1.31408",
+ "symbol": "GBP/USD",
+ "timestamp": 1795032000
+}

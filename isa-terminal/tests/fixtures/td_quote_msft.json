@@ -1,0 +1,29 @@
+{
+ "average_volume": "27521335",
+ "change": "2.050018",
+ "close": "508.29001",
+ "currency": "USD",
+ "datetime": "2026-11-18",
+ "exchange": "NASDAQ",
+ "fifty_two_week": {
+  "high": "559.15002",
+  "high_change": "-50.86002",
+  "high_change_percent": "-9.095952",
+  "low": "349.20001",
+  "low_change": "159.089996",
+  "low_change_percent": "45.55842",
+  "range": "349.200012 - 559.150024"
+ },
+ "high": "510.44000",
+ "is_market_open": false,
+ "last_quote_at": 1795035540,
+ "low": "501.079987",
+ "mic_code": "XNGS",
+ "name": "Microsoft Corporation Common Stock",
+ "open": "505.10999",
+ "percent_change": "0.40494990",
+ "previous_close": "506.23999",
+ "symbol": "MSFT",
+ "timestamp": 1795012200,
+ "volume": "21349348"
+}

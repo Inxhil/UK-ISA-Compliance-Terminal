@@ -1,0 +1,271 @@
+# =============================================================================
+#  UK ISA Command Centre — configuration
+#  Policy thresholds (caps, upside, OCF…) live in handbook.md §0, NOT here.
+#  This file holds: accounts, watchlist, target weights, per-ticker alerts, UI/cache settings.
+# =============================================================================
+
+profile:
+  monthly_contribution_gbp: 1000      # default for the Buy Plan box in Pane 1
+  fractional_shares: true             # false => whole-share orders (e.g. some HL funds / ETFs)
+  min_order_gbp: 25                   # drop buy lines smaller than this and re-allocate
+
+data:
+  holdings_csv: data/holdings.csv
+  contributions_csv: data/contributions.csv
+  handbook: handbook.md
+  cache_dir: .cache
+  reports_dir: reports
+
+# --- Accounts (ids are referenced from the two CSVs) -------------------------
+# kind: SS_ISA | CASH_ISA | IFISA | LISA | GIA
+# flexible: only meaningful for ISAs. VERIFY with each provider's T&Cs — not every ISA is flexible.
+accounts:
+  - {id: T212_ISA, broker: "Trading 212",           kind: SS_ISA, flexible: true}
+  - {id: HL_ISA,   broker: "Hargreaves Lansdown",   kind: SS_ISA, flexible: true}
+  - {id: VG_ISA,   broker: "Vanguard UK",           kind: SS_ISA, flexible: true}
+  - {id: HL_LISA,  broker: "Hargreaves Lansdown",   kind: LISA,   flexible: false}
+  - {id: HL_GIA,   broker: "Hargreaves Lansdown",   kind: GIA,    flexible: false}
+
+cgt:
+  realised_gains_ytd_gbp: 420         # gains already realised this tax year outside the ISA
+
+# --- Market tape (top bar) ---------------------------------------------------
+tape:
+  - {symbol: "^FTSE",    label: "FTSE 100", kind: index}
+  - {symbol: "^GSPC",    label: "S&P 500",  kind: index}
+  - {symbol: "GBPUSD=X", label: "GBP/USD",  kind: fx}
+  # UK 10Y gilt yield comes from the Bank of England IADB (series IUDMNPY, no key needed)
+
+# --- UI ----------------------------------------------------------------------
+ui:
+  refresh_seconds: 60                 # auto-refresh period (press `a` to toggle)
+  tape_scroll_hz: 6
+  experience_level: advanced          # beginner | intermediate | advanced   (press `l`, or click the badge, to change)
+
+cache_ttl_seconds:
+  quote: 90
+  fx: 90
+  history: 21600                      # 6h  (daily bars)
+  info: 43200                         # 12h (fundamentals + analyst data)
+  news: 900
+  gilt: 3600
+
+# --- Default alert thresholds (per-ticker `alerts:` override these) ----------
+alerts:
+  rsi_below: 30
+  rsi_above: 70
+
+# --- Watchlist & target weights ----------------------------------------------
+# 20-ticker UK ISA universe, tagged by `sleeve` (the category pills in pane 2):
+#   core_etf = Global & Regional Core ETFs | uk_div = UK Blue-Chips & Dividend Income
+#   trust    = UK Investment Trusts        | global_stock = Global Quality & Growth
+# target_weight_pct: share of TOTAL ISA value incl. the cash sleeve. Must sum to 100 with `cash_target_pct`.
+#   Only the six holdings in your sample portfolio carry targets; the rest are watch-only (0%): screened and charted,
+#   never funded by the buy plan until you give them a target.
+# ter_pct: ongoing charge (OCF) — APPROXIMATE, verify against each fund's latest KID.
+# distribution: acc (accumulating) or dist.  yield_override_pct: used for acc funds (Yahoo shows 0% cash yield).
+# look_through: approximate GICS sector weights (Yahoo sector names), normalised at runtime. REFRESH QUARTERLY.
+# aliases: extra company names used only to tag news headlines to a ticker.
+# ISINs are included only where certain; verify before relying on them for broker imports.
+cash_target_pct: 5
+
+watchlist:
+  # ------------------------------------------------------------ Global & Regional Core ETFs
+  - ticker: VWRP.L
+    name: Vanguard FTSE All-World UCITS ETF (Acc)
+    kind: etf
+    sleeve: core_etf
+    target_weight_pct: 35
+    ter_pct: 0.22
+    distribution: acc
+    yield_override_pct: 1.7
+    isin: IE00BK5BQT80
+    broker_symbols: {t212: VWRP, hl: VWRP, vanguard: VWRP}
+    look_through: {Technology: 26, Financial Services: 16.5, Consumer Cyclical: 10.5, Industrials: 11, Healthcare: 9, Communication Services: 8, Consumer Defensive: 5, Energy: 3.5, Basic Materials: 3.5, Utilities: 2.5, Real Estate: 2.5}
+    alerts: {price_below: 120}
+
+  - ticker: VUAG.L
+    name: Vanguard S&P 500 UCITS ETF (Acc)
+    kind: etf
+    sleeve: core_etf
+    target_weight_pct: 20
+    ter_pct: 0.07
+    distribution: acc
+    yield_override_pct: 1.1
+    isin: IE00BFMXXD54
+    broker_symbols: {t212: VUAG, hl: VUAG, vanguard: VUAG}
+    look_through: {Technology: 33, Financial Services: 13, Communication Services: 10.5, Consumer Cyclical: 10, Healthcare: 9, Industrials: 8.5, Consumer Defensive: 5, Energy: 3, Utilities: 2.5, Real Estate: 2, Basic Materials: 2}
+
+  - ticker: SWDA.L
+    name: iShares Core MSCI World UCITS ETF (Acc)
+    kind: etf
+    sleeve: core_etf
+    target_weight_pct: 0
+    ter_pct: 0.20
+    distribution: acc
+    yield_override_pct: 1.5
+    look_through: {Technology: 25, Financial Services: 15, Consumer Cyclical: 10.5, Industrials: 11, Healthcare: 11, Communication Services: 7.5, Consumer Defensive: 6, Energy: 4, Basic Materials: 3.5, Utilities: 2.5, Real Estate: 2}
+
+  - ticker: VERG.L
+    name: Vanguard FTSE Developed Europe ex UK UCITS ETF (Acc)
+    kind: etf
+    sleeve: core_etf
+    target_weight_pct: 0
+    ter_pct: 0.12
+    distribution: acc
+    yield_override_pct: 2.8
+    look_through: {Financial Services: 19, Industrials: 19, Healthcare: 15, Consumer Cyclical: 10, Consumer Defensive: 8, Technology: 8, Basic Materials: 5, Utilities: 5, Energy: 4, Communication Services: 4, Real Estate: 1}
+
+  - ticker: VFEG.L
+    name: Vanguard FTSE Emerging Markets UCITS ETF (Acc)
+    kind: etf
+    sleeve: core_etf
+    target_weight_pct: 0
+    ter_pct: 0.22
+    distribution: acc
+    yield_override_pct: 2.5
+    look_through: {Technology: 25, Financial Services: 22, Consumer Cyclical: 13, Communication Services: 10, Basic Materials: 7, Industrials: 6, Energy: 5, Consumer Defensive: 5, Healthcare: 4, Utilities: 2, Real Estate: 1}
+
+  # ------------------------------------------------------------ UK Blue-Chips & Dividend Income
+  - ticker: ISF.L
+    name: iShares Core FTSE 100 UCITS ETF (Dist)
+    kind: etf
+    sleeve: uk_div
+    target_weight_pct: 0
+    ter_pct: 0.07
+    distribution: dist
+    isin: IE0005042456
+    look_through: {Financial Services: 24, Healthcare: 12, Consumer Defensive: 15, Energy: 11, Industrials: 11, Basic Materials: 8, Consumer Cyclical: 6, Utilities: 4, Technology: 2, Communication Services: 3, Real Estate: 2, Other: 2}
+
+  - ticker: VHYL.L
+    name: Vanguard FTSE All-World High Dividend Yield UCITS ETF (Dist)
+    kind: etf
+    sleeve: uk_div
+    target_weight_pct: 0
+    ter_pct: 0.29
+    distribution: dist
+    look_through: {Financial Services: 21, Healthcare: 11, Technology: 10, Consumer Defensive: 9, Energy: 9, Industrials: 9, Consumer Cyclical: 8, Utilities: 6, Communication Services: 6, Basic Materials: 6, Real Estate: 5}
+
+  - ticker: AZN.L
+    name: AstraZeneca PLC
+    kind: stock
+    sleeve: uk_div
+    target_weight_pct: 10
+    sector: Healthcare
+    isin: GB0009895292
+    broker_symbols: {t212: AZN, hl: AZN, vanguard: AZN}
+    alerts: {price_below: 115}          # £ per share (config prices are always in GBP/major units)
+
+  - ticker: SHEL.L
+    name: Shell plc
+    kind: stock
+    sleeve: uk_div
+    target_weight_pct: 0
+    sector: Energy
+    isin: GB00BP6MXD84
+
+  - ticker: HSBA.L
+    name: HSBC Holdings plc
+    kind: stock
+    sleeve: uk_div
+    target_weight_pct: 0
+    sector: Financial Services
+    isin: GB0005405286
+    aliases: [HSBC]
+
+  - ticker: ULVR.L
+    name: Unilever PLC
+    kind: stock
+    sleeve: uk_div
+    target_weight_pct: 0
+    sector: Consumer Defensive
+    isin: GB00B10RZP78
+
+  - ticker: REL.L
+    name: RELX PLC
+    kind: stock
+    sleeve: uk_div
+    target_weight_pct: 0
+    sector: Industrials
+    isin: GB00B2B0DG97
+    aliases: [RELX]
+
+  # ------------------------------------------------------------ UK Investment Trusts
+  - ticker: SMT.L
+    name: Scottish Mortgage Investment Trust
+    kind: trust
+    sleeve: trust
+    target_weight_pct: 12
+    ter_pct: 0.31
+    distribution: dist
+    isin: GB00BLDYK618
+    broker_symbols: {t212: SMT, hl: SMT, vanguard: SMT}
+    aliases: [Scottish Mortgage]
+    look_through: {Technology: 28, Consumer Cyclical: 22, Communication Services: 13, Industrials: 12, Healthcare: 10, Financial Services: 10, Other: 5}
+
+  - ticker: FGT.L
+    name: Finsbury Growth & Income Trust
+    kind: trust
+    sleeve: trust
+    target_weight_pct: 0
+    ter_pct: 0.62
+    distribution: dist
+    aliases: [Finsbury Growth]
+    look_through: {Consumer Defensive: 28, Industrials: 27, Financial Services: 15, Technology: 10, Healthcare: 6, Communication Services: 5, Consumer Cyclical: 4, Other: 5}
+
+  - ticker: JGGI.L
+    name: JPMorgan Global Growth & Income Trust
+    kind: trust
+    sleeve: trust
+    target_weight_pct: 0
+    ter_pct: 0.40
+    distribution: dist
+    aliases: [JPMorgan Global Growth]
+    look_through: {Technology: 25, Financial Services: 15, Industrials: 12, Healthcare: 10, Consumer Cyclical: 10, Communication Services: 10, Consumer Defensive: 6, Energy: 4, Other: 8}
+
+  # ------------------------------------------------------------ Global Quality & Growth
+  - ticker: MSFT
+    name: Microsoft Corporation
+    kind: stock
+    sleeve: global_stock
+    target_weight_pct: 12
+    sector: Technology
+    isin: US5949181045
+    broker_symbols: {t212: MSFT, hl: MSFT}
+    alerts: {price_below: 330}          # GBP-equivalent
+
+  - ticker: NVDA
+    name: NVIDIA Corporation
+    kind: stock
+    sleeve: global_stock
+    target_weight_pct: 6
+    sector: Technology
+    isin: US67066G1040
+    broker_symbols: {t212: NVDA, hl: NVDA}
+    alerts: {rsi_above: 75}
+
+  - ticker: AAPL
+    name: Apple Inc.
+    kind: stock
+    sleeve: global_stock
+    target_weight_pct: 0
+    sector: Technology
+    isin: US0378331005
+
+  - ticker: GOOGL
+    name: Alphabet Inc.
+    kind: stock
+    sleeve: global_stock
+    target_weight_pct: 0
+    sector: Communication Services
+    isin: US02079K3059
+    aliases: [Google]
+
+  - ticker: BRK-B
+    name: Berkshire Hathaway Inc.
+    kind: stock
+    sleeve: global_stock
+    target_weight_pct: 0
+    sector: Financial Services
+    isin: US0846707026
+    aliases: [Berkshire]
