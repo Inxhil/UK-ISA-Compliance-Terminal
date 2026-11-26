@@ -21,7 +21,7 @@ Nothing leaves your machine except ticker symbols and the search text you type.
 Why I built this
 I manage my own Stocks & Shares ISA and wanted my investment rules written down and enforced, not kept in my head. This terminal turns a plain-English handbook into automated checks: allowance tracking, tax alerts, concentration limits and a monthly buy plan, all explained at the level the user chooses.
 
-Built by me as a second-year Business Management student at the University of Surrey, using AI-assisted development (Claude) for much of the code. I designed the features, the rules and the architecture, and tested it against live data.
+Built by me as a second-year Business Management student at the University of Surrey, using AI-assisted development (Claude) for much of the code. I designed the features, the rules and the architecture, and tested it against live data. (As well as making sure it was fit for purpose and privacy in the highest standard) 
 
 ```bash
 pip install -r requirements.txt
