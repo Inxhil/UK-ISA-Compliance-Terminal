@@ -8,6 +8,10 @@ Nothing leaves your machine except ticker symbols and the search text you type.
 > **Quantitative modelling and personal handbook tool only. Not FCA-regulated financial advice.**
 > It turns rules *you* wrote into flags and arithmetic. It does not know your circumstances.
 > https://github.com/Inxhil/UK-ISA-Compliance-Terminal/issues/1
+
+https://github.com/user-attachments/assets/941500cf-39c0-49bd-9d48-48cef440dc9a
+
+
 > https://github.com/user-attachments/assets/44ffa516-0d66-45f5-af7a-6cfd05da92ef
 
 <img width="1902" height="988" alt="DEMO PIC FIRST" src="https://github.com/user-attachments/assets/f80b067c-20c6-4b20-b422-1bdac0b1cc6c" />
