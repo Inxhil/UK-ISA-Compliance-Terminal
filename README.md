@@ -1,15 +1,5 @@
 
 # UK Stocks & Shares ISA — Command Centre & Handbook · v0.2
-## Why I built this
-
-I manage my own Stocks & Shares ISA and wanted my investment rules written down
-and enforced, not kept in my head. This terminal turns a plain-English handbook
-into automated checks: allowance tracking, tax alerts, concentration limits and a
-monthly buy plan, all explained at the level the user chooses.
-
-Built by me as a second-year Business Management student at the University of
-Surrey, using AI-assisted development (Claude) for much of the code. I designed
-the features, the rules and the architecture, and tested it against live data.
 
 A local, dark-mode, Bloomberg-style terminal for managing a UK Stocks & Shares ISA against **your own written handbook**.
 Free data only (Twelve Data / Finnhub free tiers if you add keys, Yahoo Finance always, Bank of England for the gilt yield).
@@ -27,6 +17,11 @@ Nothing leaves your machine except ticker symbols and the search text you type.
 <img width="1916" height="993" alt="DEMO PIC 2" src="https://github.com/user-attachments/assets/964253cf-09c3-473d-b593-784f7f10035a" />
 
 <img width="1919" height="995" alt="DEMO PIC 3" src="https://github.com/user-attachments/assets/9c2ff155-da47-4621-a70a-dcaff6e3ac72" />
+
+Why I built this
+I manage my own Stocks & Shares ISA and wanted my investment rules written down and enforced, not kept in my head. This terminal turns a plain-English handbook into automated checks: allowance tracking, tax alerts, concentration limits and a monthly buy plan, all explained at the level the user chooses.
+
+Built by me as a second-year Business Management student at the University of Surrey, using AI-assisted development (Claude) for much of the code. I designed the features, the rules and the architecture, and tested it against live data.
 
 ```bash
 pip install -r requirements.txt
