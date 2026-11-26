@@ -6,6 +6,7 @@ Nothing leaves your machine except ticker symbols and the search text you type.
 
 > **Quantitative modelling and personal handbook tool only. Not FCA-regulated financial advice.**
 > It turns rules *you* wrote into flags and arithmetic. It does not know your circumstances.
+> https://github.com/Inxhil/UK-ISA-Compliance-Terminal/issues/1
 
 ```bash
 pip install -r requirements.txt
