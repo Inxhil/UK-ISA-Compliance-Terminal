@@ -38,6 +38,7 @@ There will also be future updates roadmap BELOW (Is subject to change based on w
 ## Roadmap
 
 ### v0.3 — Tax-Year Reporting, Stress Testing & UK Data Resilience
+- [ ] **Expanded set up Wizard: allowing simplified setup for ease of access and not over complicate the setup
 - [ ] **HMRC Tax-Year & Audit Exports (`--export`):** Generate formatted PDF/Excel (`.xlsx`) end-of-year packs covering ISA/LISA allowance utilisation, Section 104 CGT disposal schedules, and a timestamped log of handbook rule breaches.
 - [ ] **HMRC CGT Matching Rules:** Extend Bed & ISA calculations beyond Section 104 average cost to model **same-day** and **30-day ("bed and breakfasting")** share identification rules.
 - [ ] **Scenario & Stress Testing Pane:** Model portfolio impact under configurable macro shocks (e.g., ±15% GBP/USD FX swings, -30% equity drawdown, UK gilt yield shifts) against handbook risk caps.
