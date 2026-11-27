@@ -24,21 +24,17 @@ https://github.com/user-attachments/assets/941500cf-39c0-49bd-9d48-48cef440dc9a
 
 ## Why I built this
 
-I manage my own Stocks & Shares ISA and wanted my investment rules written down
-and enforced, not kept in my head. This terminal turns a plain-English handbook
-into automated checks: allowance tracking, tax alerts, concentration limits and a
-monthly buy plan, all explained at the level the user chooses.
-
 Built by me as a second-year Business Management student at the University of
 Surrey, using AI-assisted development (Claude) for much of the code. I designed
-the features, the rules and the architecture, and tested it against live data.
-(As well as making sure it was fit for purpose and privacy especially regarding keys are at the highest standard)
-There will also be future updates roadmap BELOW (Is subject to change based on what is deemed achievable by the next major update) 
+the features, the rules and the architecture, tested it against live data, and
+made privacy a priority: API keys stay local and are never logged or displayed.
+
+The roadmap below shows planned work towards v1.0 (subject to change).
 
 ## Roadmap
 
 ### v0.3 — Tax-Year Reporting, Stress Testing & UK Data Resilience
-- [ ] **Expanded set up Wizard: allowing simplified setup for ease of access and not over complicate the setup
+- [ ] **Expanded setup wizard:** simpler first-run setup so new users aren't overwhelmed.
 - [ ] **HMRC Tax-Year & Audit Exports (`--export`):** Generate formatted PDF/Excel (`.xlsx`) end-of-year packs covering ISA/LISA allowance utilisation, Section 104 CGT disposal schedules, and a timestamped log of handbook rule breaches.
 - [ ] **HMRC CGT Matching Rules:** Extend Bed & ISA calculations beyond Section 104 average cost to model **same-day** and **30-day ("bed and breakfasting")** share identification rules.
 - [ ] **Scenario & Stress Testing Pane:** Model portfolio impact under configurable macro shocks (e.g., ±15% GBP/USD FX swings, -30% equity drawdown, UK gilt yield shifts) against handbook risk caps.
