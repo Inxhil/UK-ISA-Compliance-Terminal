@@ -33,7 +33,22 @@ Built by me as a second-year Business Management student at the University of
 Surrey, using AI-assisted development (Claude) for much of the code. I designed
 the features, the rules and the architecture, and tested it against live data.
 (As well as making sure it was fit for purpose and privacy especially regarding keys are at the highest standard)
-There will also be future updates roadmap will soon be added
+There will also be future updates roadmap BELOW (Is subject to change based on what is deemed achievable by the next major update) 
+
+## Roadmap
+
+### v0.3 — Tax-Year Reporting, Stress Testing & UK Data Resilience
+- [ ] **HMRC Tax-Year & Audit Exports (`--export`):** Generate formatted PDF/Excel (`.xlsx`) end-of-year packs covering ISA/LISA allowance utilisation, Section 104 CGT disposal schedules, and a timestamped log of handbook rule breaches.
+- [ ] **HMRC CGT Matching Rules:** Extend Bed & ISA calculations beyond Section 104 average cost to model **same-day** and **30-day ("bed and breakfasting")** share identification rules.
+- [ ] **Scenario & Stress Testing Pane:** Model portfolio impact under configurable macro shocks (e.g., ±15% GBP/USD FX swings, -30% equity drawdown, UK gilt yield shifts) against handbook risk caps.
+- [ ] **UK RNS / LSE News Fallback:** Add a keyless RSS/RNS parser for UK-listed equities so `.L` company catalysts do not rely solely on `yfinance`.
+- [ ] **Expanded Broker Adapters:** Add CSV import support for **AJ Bell**, **Interactive Investor (ii)**, and **Freetrade**, alongside automated ISIN-to-ticker validation.
+
+### v0.4 — Historical Attribution, Persistence & Production Hardening
+- [ ] **SQLite Audit Ledger:** Optional migration from flat CSVs to a local SQLite database to track daily historical NAV, time-weighted return (TWRR) vs. FTSE All-World / S&P 500 benchmarks, and a full rebalance audit trail.
+- [ ] **Multi-Wrapper Support (2027/28 Rules):** Add support for **Junior ISAs (JISA)**, **SIPP** contribution allowances, and upcoming April 2027 UK ISA rule changes.
+- [ ] **GitHub Actions CI & Packaging:** Automated `pytest` CI pipeline running the 400+ offline test suite on every push, plus `pyproject.toml` packaging for one-command `pipx` installation.
+- [ ] **Optional Local LLM Co-Pilot (Ollama):** Opt-in local model mode for Pane 4 narrative summaries while preserving the zero-API deterministic rule engine as the default and keeping all holdings strictly offline.
 
 ```bash
 pip install -r requirements.txt
