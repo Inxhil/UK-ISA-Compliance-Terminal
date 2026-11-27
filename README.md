@@ -225,12 +225,18 @@ only, per account); transfers aren't subscriptions; Bed & ISA = subscription + C
 unknown codes are refused not guessed, analyst targets are unit-reconciled against price, a 100× price jump between refreshes is
 rejected, and yield comes from dividend history (or Finnhub), never from Yahoo's unit-unreliable fields.
 
-## Importing broker CSVs
+## Importing broker CSVs (beta)
+
 ```bash
-python -m engine.broker_import --broker t212 --account T212_ISA export.csv          # dry run
+python -m engine.broker_import --broker t212 --account T212_ISA export.csv          # dry run: shows what would change
 python -m engine.broker_import --broker hl   --account HL_ISA   export.csv --write  # backs up, then writes
 ```
-Trading 212, Hargreaves Lansdown and Vanguard UK parsers are header-alias driven and **fail loudly, listing the headers they saw** (I have yet to try nor could Claude verify as it is an AI not a human with T212 account how ever will do a test run to confirm if it does within the next few days).
+
+Parsers for Trading 212, Hargreaves Lansdown and Vanguard UK match columns by
+header name and **fail loudly**, listing the headers they found, so a format
+mismatch never imports bad data silently. They're built from the brokers'
+published formats and haven't yet been tested against every real export.
+Always do a dry run first. If one fails, please open an issue with the headers it lists.
 
 ## Known limits (read these)
 * **Valuation vs 5-year average** is *price* vs its own 5-year mean price, not a P/E comparison (no free historical-earnings source).
