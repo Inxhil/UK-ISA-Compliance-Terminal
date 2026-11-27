@@ -230,7 +230,7 @@ rejected, and yield comes from dividend history (or Finnhub), never from Yahoo's
 python -m engine.broker_import --broker t212 --account T212_ISA export.csv          # dry run
 python -m engine.broker_import --broker hl   --account HL_ISA   export.csv --write  # backs up, then writes
 ```
-Trading 212, Hargreaves Lansdown and Vanguard UK parsers are header-alias driven and **fail loudly, listing the headers they saw** (I could not verify them against real exports).
+Trading 212, Hargreaves Lansdown and Vanguard UK parsers are header-alias driven and **fail loudly, listing the headers they saw** (I have yet to try nor could Claude verify as it is an AI not a human with T212 account how ever will do a test run to confirm if it does within the next few days).
 
 ## Known limits (read these)
 * **Valuation vs 5-year average** is *price* vs its own 5-year mean price, not a P/E comparison (no free historical-earnings source).
