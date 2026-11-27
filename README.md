@@ -4,6 +4,8 @@
 A local, dark-mode, Bloomberg-style terminal for managing a UK Stocks & Shares ISA against **your own written handbook**.
 Free data only (Twelve Data / Finnhub free tiers if you add keys, Yahoo Finance always, Bank of England for the gilt yield).
 Nothing leaves your machine except ticker symbols and the search text you type.
+> **Quantitative modelling and personal handbook tool only. Not FCA-regulated financial advice.**
+> It turns rules *you* wrote into flags and arithmetic. It does not know your circumstances.
 
 ## Why I built this
 
@@ -17,9 +19,6 @@ Surrey, using AI-assisted development (Claude) for much of the code. I designed
 the features, the rules and the architecture, tested it against live data, and
 made privacy a priority: API keys stay local and are never logged or displayed.
 (DEMO Pictures and Video below)
-
-> **Quantitative modelling and personal handbook tool only. Not FCA-regulated financial advice.**
-> It turns rules *you* wrote into flags and arithmetic. It does not know your circumstances.
 
 
 https://github.com/user-attachments/assets/162677ce-b5cd-4fb9-90aa-af23cdb92f30
@@ -251,3 +250,6 @@ Vanguard UK parsers are not yet verified against real exports.
 * Dividend income is a **trailing-12-month projection**, not a forecast. Accumulating funds are shown as reinvested, not cash.
 * `ISIN`s in `config.yaml` are included only where I'm certain; check before relying on them for imports.
 * Tests are offline by default; `RUN_LIVE=1 python -m pytest -q tests/test_live_smoke.py` exercises the real providers with your keys.
+
+> **Quantitative modelling and personal handbook tool only. Not FCA-regulated financial advice.**
+> It turns rules *you* wrote into flags and arithmetic. It does not know your circumstances.
