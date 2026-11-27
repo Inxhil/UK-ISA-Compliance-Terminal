@@ -24,8 +24,6 @@ made privacy a priority: API keys stay local and are never logged or displayed.
 https://github.com/user-attachments/assets/162677ce-b5cd-4fb9-90aa-af23cdb92f30
 
 
-> https://github.com/user-attachments/assets/44ffa516-0d66-45f5-af7a-6cfd05da92ef
-
 <img width="1902" height="988" alt="DEMO PIC FIRST" src="https://github.com/user-attachments/assets/f80b067c-20c6-4b20-b422-1bdac0b1cc6c" />
 
 <img width="1911" height="989" alt="DEMO PIC 1" src="https://github.com/user-attachments/assets/58115402-4586-486f-83b3-203cb46c4210" />
@@ -237,7 +235,9 @@ python -m engine.broker_import --broker hl   --account HL_ISA   export.csv --wri
 
 Parsers for Trading 212, Hargreaves Lansdown and Vanguard UK match columns by
 header name and **fail loudly**, listing the headers they found, so a format
-mismatch never imports bad data silently. (NEW UPDATE on import): Trading 212 has been verified against a real 12-month export (559 transactions, Nov 2026).
+mismatch never imports bad data silently.
+
+Trading 212 has now been verified against a real 12-month export (559 transactions, Nov 2026).
 Known gaps: spin-offs are skipped with a warning, and "return of capital"
 distributions are currently treated as dividends. Hargreaves Lansdown and
 Vanguard UK parsers are not yet verified against real exports.
