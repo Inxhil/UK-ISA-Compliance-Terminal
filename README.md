@@ -33,6 +33,7 @@ Built by me as a second-year Business Management student at the University of
 Surrey, using AI-assisted development (Claude) for much of the code. I designed
 the features, the rules and the architecture, and tested it against live data.
 (As well as making sure it was fit for purpose and privacy especially regarding keys are at the highest standard)
+There will also be future updates roadmap will soon be added
 
 ```bash
 pip install -r requirements.txt
