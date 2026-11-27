@@ -116,6 +116,8 @@ The roadmap below shows planned work towards v1.0 (subject to change).
 ## Roadmap
 
 ### v0.3 — Tax-Year Reporting, Stress Testing & UK Data Resilience
+- [ ] **Smarter broker import:** offer to add unmapped instruments to the
+  watchlist, treat return-of-capital as a cost-basis reduction, and support spin-offs.
 - [ ] **Expanded setup wizard:** simpler first-run setup so new users aren't overwhelmed.
 - [ ] **HMRC Tax-Year & Audit Exports (`--export`):** Generate formatted PDF/Excel (`.xlsx`) end-of-year packs covering ISA/LISA allowance utilisation, Section 104 CGT disposal schedules, and a timestamped log of handbook rule breaches.
 - [ ] **HMRC CGT Matching Rules:** Extend Bed & ISA calculations beyond Section 104 average cost to model **same-day** and **30-day ("bed and breakfasting")** share identification rules.
@@ -234,9 +236,11 @@ python -m engine.broker_import --broker hl   --account HL_ISA   export.csv --wri
 
 Parsers for Trading 212, Hargreaves Lansdown and Vanguard UK match columns by
 header name and **fail loudly**, listing the headers they found, so a format
-mismatch never imports bad data silently. They're built from the brokers'
-published formats and haven't yet been tested against every real export.
-Always do a dry run first. If one fails, please open an issue with the headers it lists.
+mismatch never imports bad data silently. (NEW UPDATE on import): Trading 212 has been verified against a real 12-month export (559 transactions, Nov 2026).
+Known gaps: spin-offs are skipped with a warning, and "return of capital"
+distributions are currently treated as dividends. Hargreaves Lansdown and
+Vanguard UK parsers are not yet verified against real exports.
+
 
 ## Known limits (read these)
 * **Valuation vs 5-year average** is *price* vs its own 5-year mean price, not a P/E comparison (no free historical-earnings source).
