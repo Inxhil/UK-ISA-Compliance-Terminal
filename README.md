@@ -29,6 +29,44 @@ Surrey, using AI-assisted development (Claude) for much of the code. I designed
 the features, the rules and the architecture, tested it against live data, and
 made privacy a priority: API keys stay local and are never logged or displayed.
 
+## Quick start
+
+**1. Install Python 3.11 or newer** from [python.org](https://www.python.org/downloads/).
+On Windows, tick **"Add Python to PATH"** during installation.
+
+**2. Download this project.** Click the green **Code** button above → **Download ZIP**,
+then unzip it. (Or, if you use git: `git clone https://github.com/Inxhil/UK-ISA-Compliance-Terminal.git`)
+
+**3. Open a terminal in the project folder.** On Windows, open the unzipped folder,
+right-click inside it and choose **Open in Terminal**. Make the window large
+(at least 150 × 40 characters). Windows Terminal is recommended for full colour.
+
+**4. Install and run:**
+
+```bash
+cd isa-terminal
+pip install -r requirements.txt
+python terminal.py --demo     # try it first with sample data, no internet or keys needed
+```
+
+**5. Set it up for your own ISA (optional):**
+
+```bash
+python setup_isa.py           # guided wizard: experience level, allowance, monthly amount, API keys
+python terminal.py            # run with live market data
+```
+
+API keys are optional: the app works with free Yahoo Finance data without them.
+Press `?` inside the app for help, or `q` to quit.
+
+### All commands
+
+```bash
+python terminal.py --level beginner   # override the saved experience level for one run
+python terminal.py --snapshot         # print the weekly memo and exit
+python -m pytest -q                   # run the 400+ offline tests
+```
+
 The roadmap below shows planned work towards v1.0 (subject to change).
 
 ## Roadmap
