@@ -67,6 +67,45 @@ python terminal.py --snapshot         # print the weekly memo and exit
 python -m pytest -q                   # run the 400+ offline tests
 ```
 
+## Editing your handbook
+
+Your rules live in `isa-terminal/handbook.md`. It has two parts:
+
+- **§0 Machine-readable rules:** the fenced `yaml handbook-rules` block. These
+  numbers drive every signal in the terminal.
+- **§1–10 Your written policy:** philosophy, risk tolerance and step-by-step
+  routines. This is prose for you; the app displays it but doesn't parse it.
+
+**To change a rule:**
+
+1. Open `handbook.md` in any text editor (Notepad, VS Code…).
+2. Find the setting in the §0 block and change the number. For example, to lower
+   the single-holding cap from 15% to 10%:
+   ```yaml
+   position:
+     max_single_position_pct: 10   # was 15
+   ```
+3. Save the file, then press **`r`** in the terminal. Signals update immediately.
+
+**Common settings to personalise:**
+
+| Setting | What it controls |
+|---|---|
+| `position.max_single_position_pct` | Largest % any one holding can be |
+| `position.max_sector_pct` | Sector concentration cap (looks inside ETFs) |
+| `analyst.min_upside_pct` | Analyst upside needed before suggesting you add more |
+| `costs.max_ocf_pct_passive` | Highest fee you'll accept on index funds |
+| `cash.reserve_target_pct` | How much cash to keep uninvested |
+| `tax.alert_days` | When allowance-deadline warnings start |
+
+Each section is tagged with its rule IDs (e.g. `R-CAP-01`). These are the IDs shown
+in Advanced mode, so you can trace any signal back to the line that caused it.
+
+**Tips**
+- Keep the indentation exactly as it is. YAML is sensitive to spaces.
+- Save a copy of `handbook.md` before big changes.
+- Target weights for each holding are set in `config.yaml`, not the handbook.
+
 The roadmap below shows planned work towards v1.0 (subject to change).
 
 ## Roadmap
